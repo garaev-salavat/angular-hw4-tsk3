@@ -1,0 +1,11 @@
+<div class="my-form">
+<label for="selector">Выберите разделитель</label>
+<select id="selector" [(ngModel)]="separator">
+  <option>,</option>
+  <option>.</option>
+  <option> :</option>
+  <option> /</option>
+  <option> |</option>
+</select>
+
+<p>{{lastName |join:separator}}</p></div>
